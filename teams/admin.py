@@ -34,6 +34,10 @@ class MembershipAdmin(admin.ModelAdmin):
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for the Task model.
+    Organizes fields into logical groups and provides filtering/search capabilities.
+    """
     list_display = ('title', 'status', 'priority', 'team', 'due_date', 'created_at', 'updated_at')
     fields = (('title', 'priority', 'status'), ('description', 'due_date'), ('assigned_to', 'team'))
     search_fields = ('title',)

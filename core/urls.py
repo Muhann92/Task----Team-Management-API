@@ -2,8 +2,12 @@ from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from teams.views import home
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('', home, name='home'),
     
     # Include teams URLs (e.g., /api/tasks/)
     path('api/', include('teams.urls')),
