@@ -9,7 +9,7 @@ Eine vollständig containerisierte **Task- & Team-Management-API**, entwickelt m
 
 * **Framework:** [Django 5.x](https://www.djangoproject.com/)
 * **API Toolkit:** [Django REST Framework (DRF)](https://www.django-rest-framework.org/)
-* **Datenbank:** PostgreSQL 16 (Containerisiert)
+* **Datenbank:** PostgreSQL 15 (Containerisiert)
 * **Orchestrierung:** Docker & Docker Compose
 * **Dokumentation:** Swagger / OpenAPI (via `drf-spectacular`)
 * **Testing:** Django Unit Tests
